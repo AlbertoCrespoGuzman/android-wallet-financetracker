@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/view_page_main_activity_background_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/view_page_main_activity_background_normal"/>
+
+</selector>

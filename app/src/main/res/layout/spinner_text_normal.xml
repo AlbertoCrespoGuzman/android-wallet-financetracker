@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinner_normal_text_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/white"
+    android:background="@drawable/spinner_wh_background_without_line"
+    android:padding="8dp"
+    android:fontFamily="@font/normal_font"
+    android:ellipsize="none"
+    android:maxLines="100"
+    android:singleLine="false"
+    android:textSize="16dp"
+    android:scrollHorizontally="false"/>

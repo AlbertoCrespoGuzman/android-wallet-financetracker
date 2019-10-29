@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#009da4</color>
+
+
+    <color name="colorPrimary">#1eb1c3</color>
+    <color name="colorPrimaryDark2">#4F9BA3</color>
+    <color name="colorButton">#8fc7e2</color>
+    <color name="colorIcon">#5378B6</color>
+    <color name="colorTextHidden">#C2C3C9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#A0C5DF</color>
+    <color name="futbolinAzul">#3b6c8e</color>
+    <color name="transaction_income_value_green">#23d233</color>
+    <color name="transaction_outgo_value_red">#d22323</color>
+    <color name="transaction_pendent_payment">#ffb709</color>
+    <color name="isntallment_cardview_background">#d4d2d2</color>
+    <color name="facebook_color">#245591</color>
+    <color name="tool_bar_color">#009da4</color>
+    <color name="income_green">#24dc8e</color>
+    <color name="outgo_red">#ff8b8b</color>
+    <color name="grey">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+<color name="filter_yellow">#ddb926</color>
+    <string-array name="chart_colors">
+        <item>#fe774a</item>
+        <item>#b68dfe</item>
+        <item>#44c956</item>
+        <item>#fd8efd</item>
+        <item>#9dd954</item>
+        <item>#0e3bfb</item>
+        <item>#fcaf8d</item>
+        <item>#e94a47</item>
+        <item>#7eb6fe</item>
+        <item>#08fa92</item>
+        <item>#05fdf0</item>
+        <item>#fccc07</item>
+        <item>#ffffff</item>
+        <item>#000000</item>
+        <item>#9a6324</item>
+        <item>#fffac8</item>
+        <item>#800000</item>
+        <item>#aaffc3</item>
+        <item>#808000</item>
+        <item>#ffd8b1</item>
+        <item>#000075</item>
+        <item>#808080</item>
+
+    </string-array>
+
+</resources>

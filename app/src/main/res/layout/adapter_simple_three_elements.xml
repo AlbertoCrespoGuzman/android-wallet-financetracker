@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter_simple_three_elements_layout"
+        android:background="@color/white"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+    <TextView
+        android:id="@+id/adapter_simple_three_elements_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/adapter_simple_three_elements_guideline_1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/title_font"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adapter_simple_three_elements_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+    <TextView
+        android:id="@+id/adapter_simple_three_elements_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/adapter_simple_three_elements_guideline_1"
+        app:layout_constraintRight_toLeftOf="@+id/adapter_simple_three_elements_guideline_2"
+        android:textColor="@color/black"
+        android:fontFamily="@font/title_font"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adapter_simple_three_elements_guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+    <TextView
+        android:id="@+id/adapter_simple_three_elements_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/adapter_simple_three_elements_guideline_2"
+        app:layout_constraintRight_toLeftOf="@+id/adapter_simple_three_elements_guideline_3"
+        android:textColor="@color/black"
+        android:fontFamily="@font/title_font"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adapter_simple_three_elements_guideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/adapter_simple_three_elements_guideline_3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/adapter_simple_three_elements_edit_button"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple_white">
+
+            <RelativeLayout
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_pencil_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adapter_simple_three_elements_delete_button"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="4dp"
+            android:foreground="@drawable/ripple_white">
+
+            <RelativeLayout
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_trash_black" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

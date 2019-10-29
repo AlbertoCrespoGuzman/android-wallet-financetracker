@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.nshmura.recyclertablayout.RecyclerTabLayout
+        android:id="@+id/recycler_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/RecyclerTabLayoutTheme.Basic"
+        rtl_tabIndicatorColor="@android:color/white"
+        rtl_tabIndicatorHeight="2dp"
+        rtl_tabBackground="@color/colorPrimary"
+        rtl_tabTextAppearance="@android:style/TextAppearance.Small"
+        rtl_tabSelectedTextColor="@color/colorPrimary"
+        rtl_tabMinWidth="72dp"
+        rtl_tabMaxWidth="264dp"
+        rtl_tabPaddingStart="12dp"
+        rtl_tabPaddingTop="0dp"
+        rtl_tabPaddingEnd="12dp"
+        rtl_tabPaddingBottom="0dp"
+        rtl_tabPadding="0dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_financialcontrol_statement_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
+
+

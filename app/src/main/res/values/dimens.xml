@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">138dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="fab_margin">0dp</dimen>
+    <dimen name="design_bottom_navigation_margin" tools:override="true">0dp</dimen>
+
+    <!-- Overriding Default Bottom Navigation sizes-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">16sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">20sp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">80dp</dimen>
+    <dimen name="design_bottom_navigation_elevation" tools:override="true">20dp</dimen>
+    <dimen name="design_bottom_navigation_item_background" tools:override="true">62dp</dimen>
+    <dimen name="design_bottom_navigation_item" tools:override="true">62dp</dimen>
+    <dimen name="design_bottom_navigation_shadow_color" tools:override="true">80dp</dimen>
+
+
+
+
+    <dimen name="margin_top_n">15dp</dimen>
+    <dimen name="margin_top_sm">10dp</dimen>
+    <dimen name="margin_top_xs">5dp</dimen>
+    <dimen name="margin_top_xxs">2dp</dimen>
+    <dimen name="margin_top_0">0dp</dimen>
+
+    <dimen name="margin_xxl">80dp</dimen>
+    <dimen name="margin_n">20dp</dimen>
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="margin_xs">5dp</dimen>
+    <dimen name="margin_xxs">2dp</dimen>
+
+    <dimen name="height_300">300dp</dimen>
+    <dimen name="height_200">200dp</dimen>
+    <dimen name="height_xl">80dp</dimen>
+    <dimen name="height_l">60dp</dimen>
+    <dimen name="height_n">40dp</dimen>
+    <dimen name="height_sm">25dp</dimen>
+    <dimen name="height_xs">15dp</dimen>
+    <dimen name="height_0">0dp</dimen>
+
+    <dimen name="text_size_xxl">30dp</dimen>
+    <dimen name="text_size_xl">25dp</dimen>
+    <dimen name="text_size_l">15dp</dimen>
+    <dimen name="text_size_n">12dp</dimen>
+    <dimen name="text_size_sm">10dp</dimen>
+
+    <dimen name="padding_xl">30dp</dimen>
+    <dimen name="padding_n">20dp</dimen>
+    <dimen name="padding_xs">3dp</dimen>
+
+    <dimen name="player_ball_sm">15dp</dimen>
+
+
+</resources>

@@ -1,0 +1,12 @@
+/.idea
+/.idea/*
+/app/build/
+/app/build/*
+/app/build/**
+/.gradle/
+/.gradle/*
+/.gradle/**
+/.idea/
+/.idea/*
+/.idea/**
+local.properties

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="transaction" type="ta.na.mao.database.models.Transaction"/>
+        <import type="android.view.View"/>
+        <variable name="handler" type="ta.na.mao.activities.fragments.FragmentFinancialControlIncomeOutgoForm.Handler"/>
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    style="@style/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:fontFamily="@font/title_font"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_category_income_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mySpinnerStyle"
+            android:entries="@array/statement_income_categories_array"
+            android:selectedItemPosition="@={transaction.category}"
+            android:visibility="gone"
+            />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_category_outgo_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/mySpinnerStyle"
+                android:entries="@array/statement_outgo_categories_array"
+                android:selectedItemPosition="@={transaction.category}"
+                android:visibility="gone"
+                />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_date_text"
+            style="@style/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/financial_control_payment_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_date"
+                style="@style/inputText"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:focusable="false"
+                android:onClick="@{handler::showDatePickerTransactionDate}"
+                android:text="@={transaction.fromDatetoString(transaction.date)}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_totalvalue_title"
+            style="@style/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:hint="@string/financialcontrol_incomeoutgo_form_totalvalue_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_financialcontrol_incomeoutgo_form_date_text"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_financialcontrol_incomeoutgo_form_is_installment_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_totalvalue"
+                style="@style/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:lines="1"
+                android:text="@={transaction.fromDoubletoString(transaction.value)}"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_is_installment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/financialcontrol_incomeoutgo_form_is_installment_title"
+            style="@style/normal_text"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_financialcontrol_incomeoutgo_form_totalvalue_title"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_financialcontrol_incomeoutgo_form_is_installment"/>
+        <RadioGroup
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_is_installment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/financialcontrol_incomeoutgo_form_is_installment_title"
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_financialcontrol_incomeoutgo_form_is_installment_title"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_financialcontrol_incomeoutgo_form_if_not_installment_button"
+            >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/radiobutton"
+                    android:checked="@{!transaction.installment}"
+                    android:onClick="@{(view)->transaction.setInstallment(view, false)}"
+                    android:text="@string/financialcontrol_incomeoutgo_form_is_installment_no"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/radiobutton"
+                    android:checked="@{transaction.installment}"
+                    android:onClick="@{(view)->transaction.setInstallment(view, true)}"
+                android:text="@string/financialcontrol_incomeoutgo_form_is_installment_yes"/>
+        </RadioGroup>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_if_not_installment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{handler::saveTransaction}"
+
+            android:visibility="@{transaction.installment ? View.GONE : View.VISIBLE}"
+            android:text="@string/button_save"
+            style="@style/loginButton"
+            />
+        <LinearLayout
+            android:id="@+id/fragment_financialcontrol_incomeoutgo_form_if_installment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="@{transaction.installment ? View.VISIBLE : View.GONE}">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_payment_now_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:hint="@string/financialcontrol_incomeoutgo_form_payment_now"
+                style="@style/inputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_financialcontrol_incomeoutgo_form_payment_now"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:imeOptions="actionDone"
+                    style="@style/inputText"
+                    android:text="@={transaction.fromDoubletoString(transaction.entrance_payment)}"
+                    android:inputType="numberDecimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_totalinstallments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:entries="@array/totalinstallments_array"
+                android:selectedItemPosition="@={transaction.totalinstallments}"
+                android:inputType="number"
+                style="@style/mySpinnerStyle"
+                />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_frequencyinstallment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/frequencypayment_array"
+                android:background="@drawable/spinner_wh_background"
+                android:selectedItemPosition="@={transaction.frequencyinstallment}"
+                style="@style/mySpinnerStyle"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_first_payment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/financialcontrol_incomeoutgo_form_first_payment"
+                android:imeOptions="actionDone"
+                style="@style/inputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fragment_financialcontrol_incomeoutgo_form_first_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:lines="1"
+                    style="@style/inputText"
+                    android:imeOptions="actionDone"
+                    android:focusable="false"
+                    android:onClick="@{handler::showDatePicker}"
+                    android:text="@={transaction.fromDatetoString(transaction.firstinstallment)}"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fragment_financialcontrol_incomeoutgo_form_if_installment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{handler::saveTransaction}"
+                android:text="@string/button_save"
+                style="@style/loginButton"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</layout>

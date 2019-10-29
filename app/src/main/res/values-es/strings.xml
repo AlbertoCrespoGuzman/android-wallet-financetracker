@@ -1,0 +1,504 @@
+<resources>
+    <string name="app_name">Tá na Mão</string>
+    <!-- TODO: FACEBOOOK LOGIN CHANGE IT !!! -->
+
+    <string name="facebook_app_id"  translatable="false">2125953461055019</string>
+    <string name="fb_login_protocol_scheme">fb2125953461055019</string>
+
+
+
+    <string name="bad_credentials">Nombre de usuario y contraseña incorrecta.</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Opciones</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment_one">Hello blank fragment ONE</string>
+    <string name="hello_blank_fragment_two">Hello blank fragment TWO</string>
+
+
+
+
+    <string name="failure_connection">Problema de conexión. Por favor, comprueba que tienes conexión a internet.</string>
+    <string name="loading">Por favor espere...</string>
+    <string name="email_error">E-mail no válido</string>
+    <string name="password_short_error">La contraseña debe tener 6 caracteres como mínimo</string>
+    <string name="passwords_doesnt_match">Las contraseñas no coinciden</string>
+    <string name="register_user_details_title" >Datos del usuario</string>
+    <string name="user_name">Nombre Completo</string>
+    <string name="cpf">DNI</string>
+    <string name="address">Direccion</string>
+    <string name="cep">Cod Postal</string>
+    <string name="birthday">Fecha de nacimiento</string>
+    <string name="landline">Telefono fijo</string>
+    <string name="mobile">Móvil</string>
+    <string name="email">E-mail</string>
+    <string name="button_submit">Enviar</string>
+    <string name="name_error">El nombre debe tener más de cinco letras.</string>
+    <string name="cpf_error">DNI incorrecto. Pon 11 numeros en modo de prueba.</string>
+    <string name="address_error">La dirección debe tener como mínimo 5 letras </string>
+    <string name="cep_error">Codigo postal errado. Coloca 7 numeros en modo de prueba.</string>
+    <string name="birthday_error">Fecha de nacimiento incorrecta.</string>
+    <string name="mobile_error">Numero de telefono incorrecto.</string>
+    <string name="socialname">Es un apodo?</string>
+    <string name="name">Nombre Completo</string>
+    <string name="education">Estudios</string>
+    <string name="colorskin">Color de piel</string>
+    <string name="genre">Género</string>
+    <string name="familyincome">Renta del nucleo familiar (considera salário mínimo 900E)</string>
+    <string name="familynumber">Cuantas personas en el nucleo familiar(incluyendote)?</string>
+    <string name="activated">Tu negocio se encuentra:</string>
+
+    <string name="actived_actived">Activo</string>
+    <string name="actived_notactived">Inactivo (aún sin abrir)</string>
+    <string name="formalized">Su negocio es:</string>
+    <string name="formalized_formalized">Formalizado</string>
+    <string name="formalized_notformalized">Informal</string>
+    <string name="maincategory">Area principal del negocio</string>
+    <string name="subcategory">Subcategoria</string>
+    <string name="no">No</string>
+    <string name="yes">Sí</string>
+    <string name="state_mobile">COD</string>
+    <string name="mobile_number">Numero de móvil</string>
+    <array name="education_array">
+        <item name="0">Estudios</item>
+        <item name="1">Enseño primario Incompleto</item>
+        <item name="2">Enseño primario Completo</item>
+        <item name="3">Enseño Medio Incompleto</item>
+        <item name="4">Enseño Medio Completo</item>
+        <item name="5">Superior Incompleto</item>
+        <item name="6">Superior Completo</item>
+    </array>
+    <string name="skincolor">Color de piel</string>
+    <string name="education_error">Escoja una opción para Estudios</string>
+    <string name="skincolor_error">Escoja una opción para Color de Piel</string>
+    <string name="familyincome_error">Escoja una opción  para Renda familiar</string>
+    <string name="familynumber_error">Rellena Numero de pesrsonas en la familia correctamente.</string>
+    <string name="maincategory_error">Escoja una Categoría Principal</string>
+    <string name="subcategory_error">Escoja una subcategoria.</string>
+    <string name="financial_control_title">Control Financiero</string>
+    <string name="product_service_prize_title">Precificación Producto/Servicio</string>
+    <string name="profile_title" >Su Perfil</string>
+    <string name="logout_title">Salir</string>
+    <string name="financial_control_add_income_outgo_title">Dinero entrante/saliente</string>
+    <string name="financialcontrol_statement_title">Extracto</string>
+    <string name="financialcontrol_charts_title">Estadisticas</string>
+    <string name="financialcontrol_report_title">Informe Semestral</string>
+    <string name="financontrol_incomeoutgo_income_button">Entró $</string>
+    <string name="financontrol_incomeoutgo_outgo_button">Salió $</string>
+    <string name="financial_control_category_title">Escoja Categoría</string>
+    <string name="financialcontrol_incomeoutgo_form_totalvalue_title">Valor Total</string>
+    <string name="financialcontrol_incomeoutgo_form_is_installment_no">No financiado</string>
+    <string name="financialcontrol_incomeoutgo_form_is_installment_yes">Financiado</string>
+    <string name="financialcontrol_incomeoutgo_form_is_installment_title">Tipo de pago</string>
+    <string name="button_save">Guardar</string>
+    <string name="financialcontrol_incomeoutgo_form_payment_now">Valor de la Entrada</string>
+    <string name="financialcontrol_incomeoutgo_form_frequencyinstallment_title">Tipo de financiamiento</string>
+    <string name="financialcontrol_incomeoutgo_form_first_payment">Fecha de la primera parcela</string>
+    <string name="financialcontrol_incomeoutgo_form_payment_totalinstallments_title">Financiar en cuantas veces:</string>
+    <string name="login_title">YA TIENES UNA CUENTA?</string>
+    <string name="activity_login_email_text">E-mail</string>
+    <string name="activity_login_password_text">Contraseña</string>
+    <string name="activity_login_button_login">Entrar</string>
+    <string name="activity_login_signup_button">Crear una cuenta</string>
+    <string name="activity_register_title">Regístrate</string>
+    <string name="activity_register_email_text">E-mail</string>
+    <string name="ativity_register_password_text">Contraseña</string>
+    <string name="activity_register_password_confirm_text">Repetir Contraseña</string>
+    <string name="activity_register_submit_button">Regístrese</string>
+    <string name="financial_control_payment_date">Fecha de la operación</string>
+    <string name="category_error">Debe escoger una categoría</string>
+    <string name="date_error">Agregue la fecha de la transacción</string>
+    <string name="payment_error">Agregue el valor de la transacción</string>
+    <string name="diff_value_payment_error">El valor de la entrada no puede ser más grande que el valor total de la transacción</string>
+    <string name="total_installments_error">Escoja el número total de parcelas:</string>
+    <string name="frequency_error">Escoja cuantas veces va a ser parcelado</string>
+    <string name="firstinstallment_error">Agregue la fecha de la primera parcela</string>
+    <string name="saved_successfully">Guardado con éxito</string>
+    <string name="installement_entrance_value_text">Parcela: Valor de la Entrada</string>
+    <string name="transaction_paid_text">Pagado</string>
+    <string name="transaction_tending_text">Pendiente</string>
+    <string name="installement_is_installment_text">Parcela</string>
+    <string name="balance_text">Saldo </string>
+    <string name="financialcontrol_charts_outgo_title">Gastos</string>
+    <string name="financialcontrol_charts_income_title">Beneficios</string>
+    <string name="logout_dialog_title">Salir de la cuenta</string>
+    <string name="logout_dialog_message">Seguro que quieres salir de tu cuenta?</string>
+    <string name="logout_positive_button">Salir</string>
+    <string name="logout_negative_button">Atrás</string>
+    <string name="date_firstinstallment_error">La fecha de la primera parcela no puede ser anterior o igual a la fecha de la transacción</string>
+    <string name="all_categories">Todas (General)</string>
+    <string name="income_text">Beneficios</string>
+    <string name="outgo_text">Gastos</string>
+    <string name="scheduled_goals">Metas Programadas</string>
+    <string name="add_goal_button">Agregar Meta</string>
+    <string name="goals_category_title">Escoja Categoría</string>
+    <string name="dialog_goal_form_income_text">tipo de Meta</string>
+    <string name="dialog_goal_form_income_option">Beneficio</string>
+    <string name="dialog_goal_form_outgo_option">Gastos</string>
+    <string name="dialog_goal_form_value_text">Valor de la Meta</string>
+    <string name="button_cancel">Atrás</string>
+    <string name="no_data">Sin datos</string>
+    <string name="report_title_part1">Informe del periodo</string>
+    <string name="report_title_part2">hasta</string>
+    <string name="outgo_report_title">Informe de Gastos y metas</string>
+    <string name="income_report_title">Informe de Beneficios y metas</string>
+    <string name="goal_legend_text">Meta Mensual</string>
+    <string name="remove_goal_title">Atención</string>
+    <string name="remove_goal_dialog_message">Seguro que quieres borrar esta meta?</string>
+    <string name="remove_goal_dialog_positive_button">Borrar</string>
+    <string name="remove_goal_dialog_negative_button">Atrás</string>
+    <string name="matching_goals_category">Ya existe una meta para esta categoría para este mes. Por favor, edite la categoría existente.</string>
+    <string name="edit_button_text">Editar</string>
+    <string name="remove_buttton_text">Borrar</string>
+    <string name="installment_number">Parcela</string>
+    <string name="remove_transaction_dialog_message">Seguro que quieres borrar esta transacción? En caso de estar financiado, las parcelas también serán borradas.</string>
+    <string name="goal_reached">Meta alcanzada</string>
+    <string name="goal_reached_text_1">Atención! Has alcanzado la meta mensual de</string>
+    <string name="goal_reached_text_2_income">en Beneficios</string>
+    <string name="goal_reached_text_2_outgo">en Gastos</string>
+    <string name="goal_preview_reached">Información sobre Meta</string>
+    <string name="yes_installment_has_been_paid">Sí</string>
+    <string name="no_installment_has_not_been_paid_yet">No, aún no</string>
+    <string name="installment_payment_title">Pago de parcela</string>
+    <string name="installment_payment_message">La parcela x ya ha sido pagada?</string>
+    <string name="password_forgotten_text">Te has olvidado de la contraseña?</string>
+    <string name="continue_with_facebook">Continuar con Facebook</string>
+    <string name="type_your_email">Escriba su e-mail</string>
+    <string name="recover_password">Recuperar contraseña</string>
+    <string name="recover_password_email_sent">Hemos enviado un e-mail para reiniciar tu contraseña. Por favor, revisa tu e-mail</string>
+    <string name="register_title">Cree su cuenta</string>
+    <string name="activity_register_password_text_confirm">Repetir la contraseña</string>
+    <string name="show_statement">Ver extracto</string>
+    <string name="current_balance">Saldo Actual</string>
+    <string name="income_text_2">Entradas</string>
+    <string name="outgo_text_2">Salidas</string>
+    <string name="currenry_br">Eu</string>
+    <string name="currency_text">Saldo</string>
+    <string name="show_details">Detalles</string>
+    <string name="accept_button">Vale</string>
+    <string name="filter_future_text">FUTURAS TRANSACCIONES</string>
+    <string name="main_monthy_balance">Saldo General</string>
+    <string name="goals_income">Meta de Beneficios</string>
+    <string name="goals_outgo">Meta de Gastos</string>
+    <string name="income_outgo_title">Entradas e Salidas</string>
+    <string name="statement_title">Extracto</string>
+    <string name="stats_title">Estadísticas</string>
+    <string name="report_title">Informe</string>
+    <string name="goals_title">Metas</string>
+    <string name="preview_notification_channel_id">preview_goal_notification</string>
+    <string name="goal_max_reached">Meta alcanzada !</string>
+    <string name="activity_register_register_button">Registrar</string>
+    <string name="button_back">Voltar</string>
+    <string name="registering">Cadastrando no sistema</string>
+    <string name="logging">Efetuando login</string>
+    <string name="mainbusiness_error">Escolha a Área do Negócio</string>
+    <string name="message_fill_user_details_form">Por favor, preencha o formulário antes de sair.</string>
+    <string name="calculator_main_activity_serviceprice_text_button">Preço de Servico</string>
+    <string name="calculator_main_activity_productprice_text_button">Preço de Produto</string>
+    <string name="activity_service_price_main_add_button_text">Adicionar Preço Serviço</string>
+    <string name="activity_service_price_form_price_text">Preço de Venda do Serviço</string>
+    <string name="activity_service_price_form_labour_cost_title">Custo de Mão de Obra</string>
+    <string name="activity_service_price_form_labout_cost_add_button_text">Adicionar</string>
+    <string name="activity_service_price_form_labour_cost_total_text">Valor Total - Mão de Obra</string>
+    <string name="activity_service_price_form_labour_tax_title">Impostos sobre Mão de Obra</string>
+    <string name="activity_service_price_form_labout_tax_add_button_text">Adicionar</string>
+    <string name="activity_service_price_form_variable_cost_title">Custos Variáveis (% sobre valor venda)</string>
+    <string name="activity_service_price_form_labout_variable_cost_add_button_text">Adicionar</string>
+    <string name="activity_service_price_form_fixed_cost_title">Custos Fixos</string>
+    <string name="activity_service_price_form_overview_title">Descrição</string>
+    <string name="activity_service_price_form_variable_cost_add_button_text">Adicionar</string>
+    <string name="activity_service_price_form_fixed_cost_add_button_text">Adicionar</string>
+    <string name="dialog_service_price_labour_cost_form_description_text">Descricão</string>
+    <string name="dialog_service_price_labour_cost_title_text">Custo Mão de Obra</string>
+    <string name="dialog_service_price_labour_cost_form_ratio_text">Valor Hora</string>
+    <string name="dialog_service_price_labour_cost_form_hours_text">Quantidade de Horas</string>
+    <string name="dialog_service_price_labour_cost_form_save_button_text">Salvar</string>
+    <string name="dialog_service_price_form_error">Por favor, preencha todos os campos</string>
+    <string name="dialog_service_price_labour_cost_form_cancel_button_text">Voltar</string>
+    <string name="dialog_service_price_labour_cost_form_totalcost_text">Custo Total:</string>
+    <string name="activity_service_price_form_save_button_text">Salvar</string>
+    <string name="activity_service_price_form_cancel_button_text">Voltar</string>
+    <string name="service_prices_list_empty_list">Lista vazia</string>
+    <string name="overview_service_price_description_title">Descricao</string>
+    <string name="overview_service_price_value_title">Valor</string>
+    <string name="overview_service_price_labour_cost_title">Mao de Obra</string>
+    <string name="overview_service_price_labour_tax_title">Imposto sobre Mao de Obra</string>
+    <string name="overview_service_price_variable_cost_title">Custo variável</string>
+    <string name="overview_service_price_fixed_cost_title">Custo Fixo</string>
+    <string name="overview_service_price_total_value_title">Custo Total</string>
+    <string name="overview_service_price_sale_price_title">Receita de Venda</string>
+    <string name="overview_service_price_profit_title">Lucro Total</string>
+    <string name="overview_service_price_profit_margin_title">Margem Lucro</string>
+    <string name="activity_service_price_form_labour_cost_total_cost_title">Valor Total - Mão de Obra</string>
+    <string name="dialog_service_price_labour_cost_form_hours_text_2">Horas</string>
+    <string name="dialog_resume_service_price_title">Prestacao de Servico</string>
+    <string name="dialog_resume_service_price_message">Existe uma planilha de Prestacao de Servico que não foi concluida. Deseja continuar ou deletar a mesma?</string>
+    <string name="dialog_resume_service_price_delete_button_text">Deletar</string>
+    <string name="dialog_resume_service_price_continue_button_text">Continuar</string>
+    <string name="dialog_service_price_labour_tax_title_text">Impostos sobre Mão de Obra</string>
+    <string name="dialog_service_price_labour_tax_form_description_text">Nome do Imposto</string>
+    <string name="dialog_service_price_labour_cost_form_percentage_text">Porcentagem</string>
+    <string name="dialog_service_price_labour_tax_form_percentage_text">Porcentagem</string>
+    <string name="dialog_service_price_labour_tax_form_tax_value_text">Valor Imposto</string>
+    <string name="dialog_service_price_labour_tax_form_cancel_button_text">Voltar</string>
+    <string name="dialog_service_price_labour_tax_form_save_button_text">Salvar</string>
+    <string name="activity_service_price_form_labour_tax_name_title_text">Nome Imposto</string>
+    <string name="activity_service_price_form_labour_tax_percentage_title_text">Porcentagem</string>
+    <string name="activity_service_price_form_labour_tax_value_title_text">Valor Imposto</string>
+    <string name="activity_service_price_form_labour_tax_percentage_title_text_bottom">Valor Total Imposto</string>
+    <string name="dialog_service_price_variable_cost_title_text">Descricão</string>
+    <string name="dialog_service_price_variable_cost_form_description_text">Descricão</string>
+    <string name="dialog_service_price_variable_cost_form_percentage_text">Porcentagem</string>
+    <string name="dialog_service_price_variable_cost_form_tax_value_text">Valor</string>
+    <string name="dialog_service_price_variable_cost_form_save_button_text">Salvar</string>
+    <string name="activity_service_price_form_variable_cost_name_title_text">Descricão</string>
+    <string name="activity_service_price_form_variable_cost_percentage_title_text">Porcentagem</string>
+    <string name="activity_service_price_form_variable_cost_percentage_title_text_bottom">Valor Total - Custo Variável</string>
+    <string name="activity_service_price_form_fixed_cost_value_title">Valor</string>
+    <string name="activity_service_price_form_fixed_cost_description_title">Descricão</string>
+    <string name="activity_service_price_form_fixed_cost_value_title_bottom">Total Custo Fixo</string>
+    <string name="dialog_service_price_fixed_cost_title_text">Descricão</string>
+    <string name="dialog_service_price_fixed_cost_title_text_2">Custos Fixos</string>
+    <string name="dialog_service_price_fixed_cost_form_description_text">Descricão</string>
+    <string name="dialog_service_price_fixed_cost_form_value_text">Valor</string>
+    <string name="dialog_service_price_fixed_cost_form_cancel_button_text">Voltar</string>
+    <string name="dialog_service_price_fixed_cost_form_save_button_text">Salvar</string>
+    <string name="activity_product_price_main_add_button_text">Adicionar Preço de Produto</string>
+    <string name="dialog_resume_product_price_title">Precificacão de Produto</string>
+    <string name="dialog_resume_product_price_message">Existe uma planilha de Precificacão de Produto que não foi concluida. Deseja continuar ou deletar a mesma?</string>
+    <string name="activity_product_price_form_price_text">Preco unitário praticado</string>
+    <string name="activity_product_price_form_quantity_text">Quantidade estimada de producão</string>
+    <string name="activity_product_price_form_raw_title">Valor pago ou matéria prima e insumos</string>
+    <string name="activity_product_price_form_raw_add_button_text">Adicionar</string>
+    <string name="dialog_product_price_raw_form_description_text">Descricão</string>
+    <string name="dialog_product_price_raw_form_quantity_text_2">Quantidade</string>
+    <string name="dialog_product_price_raw_form_unit_cost_text">Custo unitário</string>
+    <string name="dialog_product_price_raw_form_totalcost_text">Custo Total</string>
+    <string name="activity_product_price_form_raw_unit_cost_title">Custo Produto(Unitário)</string>
+    <string name="activity_product_price_form_raw_unit_cost_title_text">Custo Produto (Unitário)</string>
+    <string name="activity_product_price_form_raw_total_cost_title">Custo Produto (Total)</string>
+    <string name="activity_product_price_form_fixed_variable_cost_title">Custos Variáveis e fixos (% sobre valor renda)</string>
+    <string name="activity_product_price_form_fixed_variable_cost_add_button_text">Adicionar</string>
+    <string name="activity_product_price_form_fixed_variable_cost_name_title_text">Descricão</string>
+    <string name="activity_product_price_form_fixed_variable_cost_percentage_title_text">Porcentagem</string>
+    <string name="activity_product_price_form_fixed_variable_cost_value_title_text">Valor</string>
+    <string name="activity_product_price_form_fixed_variable_cost_variable_cost_title_bottom">Custo variável por Produto (Unitário)</string>
+    <string name="activity_product_price_form_fixed_variable_total_cost_text">Custo variável (Total)</string>
+    <string name="activity_product_price_form_overview_title">Resumo</string>
+    <string name="activity_product_price_form_overview_description_title">Descricão</string>
+    <string name="overview_product_price_value_title">Valor</string>
+    <string name="overview_product_price_unit_cost_title">Custo Unitário</string>
+    <string name="overview_product_price_unit_profit_title">Lucro Unitário</string>
+    <string name="overview_product_price_total_cost_title">VALOR TOTAL CUSTO</string>
+    <string name="overview_product_price_total_sale_price_title">VALOR TOTAL RECEITA</string>
+    <string name="overview_product_price_total_profit_title">Lucro Total</string>
+    <string name="overview_product_price_total_margin_profit_title">Margen Lucro (sobre Receita)</string>
+    <string name="activity_product_price_form_cancel_button_text">Voltar</string>
+    <string name="activity_product_price_form_save_button_text">Salvar</string>
+    <string name="dialog_product_price_fixed_variable_cost_title_text">Custos variáveis e fixos (% sobre o valor venda)</string>
+    <string name="dialog_product_price_fixed_variable_cost_form_description_text">Descricão</string>
+    <string name="dialog_product_price_fixed_variable_cost_form_percentage_text">Porcentagem</string>
+    <string name="dialog_product_price_fixed_variable_cost_form_value_text">Valor</string>
+    <string name="dialog_product_price_fixed_variable_cost_form_cancel_button_text">Voltar</string>
+    <string name="dialog_product_price_fixed_variable_cost_form_save_button_text">Salvar</string>
+    <string name="dialog_product_price_raw_title_text">Valor Pago ou matéria prima e insumos</string>
+    <string name="dialog_product_price_raw_form_quantity_text">Quantidade</string>
+    <string name="dialog_product_price_raw_form_total_cost_text">Custo Total</string>
+    <string name="dialog_product_price_raw_form_save_button_text">Salvar</string>
+    <string name="dialog_product_price_raw_form_cancel_button_text">Voltar</string>
+    <string name="activity_product_price_form_fixedvariablepercentage_text">Porcentagem custo variável sobre vendas(%)</string>
+    <string name="activity_product_price_form_fixedvariablepercentage_text2">% Custo variável sobre Vendas</string>
+    <string name="calculator_main_activity_back_text_button">Voltar</string>
+    <string name="adapter_calculator_price_more_info">+ Informações</string>
+    <string name="dialog_delete_product_price_message">Está querendo deletar este formulário?</string>
+    <string name="dialog_delete_product_price_back_button_text">Voltar</string>
+    <string name="dialog_delete_product_price_delete_button_text">Deletar</string>
+    <string name="activity_product_price_form_title">Dados do Produto</string>
+    <string name="activity_service_price_form_title">Dados do Serviço</string>
+    <string name="view_page_main_activity_profile_title">Seu Perfil</string>
+    <string name="view_page_main_activity_balance_title">Controle Financeiro</string>
+    <string name="view_page_main_activity_service_price_title">Precificação Serviço</string>
+    <string name="calculator_main_activity_change_to_service_price_main_fragment">calculator_main_activity_change_to_service_price_main_fragment</string>
+    <string name="calculator_main_activity_change_to_product_price_main_fragment" >calculator_main_activity_change_to_product_price_main_fragment</string>
+    <string name="calculator_main_activity_change_to_product_cost_main_fragment" >calculator_main_activity_change_to_product_cost_main_fragment</string>
+    <string name="add_new_service_price_title">Adicionar Novo</string>
+    <string name="view_page_main_activity_product_price_title">Precificação de Produto</string>
+    <string name="view_page_main_activity_product_cost_title">Custo de Produto</string>
+    <string name="view_page_main_activity_calculator_title">Precificação</string>
+    <string name="view_page_main_activity_logout_title">Sair</string>
+    <string name="fragment_main_calculator_title">PRECIFICAÇÃO</string>
+    <string name="calculator_main_activity_serviceprice_text_button2">Preço de Serviço</string>
+    <string name="calculator_main_activity_productprice_text_button2">Preço de Produto</string>
+
+    <array name="skincolor_array">
+        <item name="0">Color de la piel</item>
+        <item name="1">Negra</item>
+        <item name="2">Parda</item>
+        <item name="3">amarilla</item>
+        <item name="4">Indígena</item>
+        <item name="5">Blanca</item>
+    </array>
+    <array name="genre_array">
+        <item name="0">Género</item>
+        <item name="1">Femenino</item>
+        <item name="2">Masculino</item>
+        <item name="3">Trans</item>
+        <item name="4">Otros</item>
+    </array>
+    <array name="familyincome_array">
+        <item name="0">Renta familiar(salario mínimo 900Eu)</item>
+        <item name="1">Menos de un salario mínimos</item>
+        <item name="2">Entre 1 y 2 salarios mínimos</item>
+        <item name="3">Entre 2 a 3 salários mínimos</item>
+        <item name="4">Entre 3 a 4 salários mínimos</item>
+        <item name="4">Más 5 salários mínimos</item>
+    </array>
+    <array name="maincategory_array">
+        <item name="0">Area do Negocio</item>
+        <item name="1">Fabricación/Artesanía (el foco es la producción. Ex.: fabricar muebles, objetos etc.)</item>
+        <item name="2"> Comercio (el foco es comprar para revender)</item>
+        <item name="3">Prestación de servicio (el foco ofrecer mano de obra, ya sea física o intelectual)</item>
+        <item name="4">Negocio social/de Impacto (el foco es alguna questión social y/o ambiental)</item>
+    </array>
+    <array name="subcategories_empty">
+        <item name="0">Subcategoria</item>
+    </array>
+    <array name="subcategories_array">
+        <item>@array/subcategory_1_array</item>
+        <item>@array/subcategory_2_array</item>
+        <item>@array/subcategory_3_array</item>
+        <item>@array/subcategory_4_array</item>
+    </array>
+    <string-array name="subcategory_0_array">
+        <item name="0"></item>
+    </string-array>
+    <string-array name="subcategory_1_array">
+        <item name="0">Escoja una opción</item>
+        <item name="1">Moda</item>
+        <item name="2">Artesanía</item>
+        <item name="3">Gastronomía</item>
+        <item name="4">Muebles</item>
+        <item name="5">Otros (agregar)</item>
+    </string-array>
+    <string-array name="subcategory_2_array">
+        <item name="0">Escoja una opción</item>
+        <item name="1">Comercio moda</item>
+        <item name="2">Comercio muebles/decoración</item>
+        <item name="3">Comercio de alimentos/bebidas</item>
+        <item name="4">Comercio verde (orgánicos, jabones, alimentación natural)</item>
+        <item name="5">Comercio diversificado</item>
+        <item name="6">Comercio ración de animales</item>
+        <item name="7">Otros (agregar)</item>
+    </string-array>
+    <string-array name="subcategory_3_array">
+        <item name="0">Escoja una opción</item>
+        <item name="1">Beleza</item>
+        <item name="2">Arquitectura</item>
+        <item name="3">Tatuaje</item>
+        <item name="4">Fotografía</item>
+        <item name="5">Comunicación</item>
+        <item name="6">Tecnología</item>
+        <item name="7">Market Place (Plataforma de intercambios o ventas)</item>
+        <item name="8">Fiestas</item>
+        <item name="9">Contabilidad/Finanzas</item>
+        <item name="10">Arreglos</item>
+        <item name="11">Psicología</item>
+        <item name="12">Diseño Gráfico</item>
+        <item name="13">Otros (agregar)</item>
+    </string-array>
+    <string-array name="subcategory_4_array">
+        <item name="0">Escoja una opción</item>
+        <item name="1">Cultura</item>
+        <item name="2">Comercio Verde (orgánicos, jabones, alimentación natural)</item>
+        <item name="3">Educación</item>
+        <item name="4">Deporte</item>
+        <item name="5">Otros (agregar)</item>
+    </string-array>
+    <array name="frequencypayment_array">
+        <item name="0" quantity="0">Tipo de financiación</item>
+        <item name="7" quantity="7">Semanal</item>
+        <item name="15" quantity="15">Quincenal</item>
+        <item name="30" quantity="30">Mensual</item>
+    </array>
+    <string-array name="totalinstallments_array">
+        <item name="0">Parcelar cuantas veces?</item>
+        <item name="1">1 vez</item>
+        <item name="2">2 veces</item>
+        <item name="3">3 veces</item>
+        <item name="4">4 veces</item>
+        <item name="5">5 veces</item>
+        <item name="6">6 veces</item>
+        <item name="7">7 veces</item>
+        <item name="8">8 veces</item>
+        <item name="9">9 veces</item>
+        <item name="10">10 veces</item>
+        <item name="11">11 veces</item>
+        <item name="12">12 veces</item>
+    </string-array>
+
+
+
+
+    <array name="statement_income_categories_array">
+        <item name="0">Categoría</item>
+        <item name="1">Ventas</item>
+        <item name="2">Prestación de servicios</item>
+        <item name="3">Sueldo</item>
+        <item name="4">Prémios</item>
+        <item name="5">Inversiones</item>
+        <item name="6">Regalos</item>
+        <item name="7">Otros</item>
+    </array>
+    <array name="statement_outgo_categories_array">
+        <item name="0">Categoría</item>
+        <item name="1">Transporte (taxi, uber, autobus…)</item>
+        <item name="2">Salud (seguro médico, medicamentos, pruebas…)</item>
+        <item name="3">Electrónicos</item>
+        <item name="4">Servicios</item>
+        <item name="5">Ropa</item>
+        <item name="6">Alimentación (supermercado, restaurantes…)</item>
+        <item name="7">Educación (cursos, libros, facultad…)</item>
+        <item name="8">Viaje (billete de avión...)</item>
+        <item name="9">Ocio (conciertos, eventos, cine…)</item>
+        <item name="10">Casa (alquiler, hipoteca, seguro…)</item>
+        <item name="11">Facturas (luz, agua, telefono, internet…)</item>
+        <item name="12">Obligaciones (préstamos, inversiones…)</item>
+        <item name="13">Trabajadores</item>
+        <item name="14">Otros</item>
+    </array>
+
+    <array name="goal_income_categories_array">
+        <item name="0">Categoría de meta</item>
+        <item name="1">Ventas</item>
+        <item name="2">Prestación de servicios</item>
+        <item name="3">Sueldo</item>
+        <item name="4">Premios</item>
+        <item name="5">Inversiones</item>
+        <item name="6">Regalos</item>
+        <item name="7">Otros</item>
+        <item name="8">General</item>
+    </array>
+    <array name="goal_outgo_categories_array">
+        <item name="0">Categoría de meta</item>
+        <item name="1">Transporte (taxi, uber, autobus…)</item>
+        <item name="2">Salud (seguro médico, remédios, exames…)</item>
+        <item name="3">Electrónicos</item>
+        <item name="4">Servicios</item>
+        <item name="5">Ropa</item>
+        <item name="6">Alimentación (supermercado, restaurantes…)</item>
+        <item name="7">Educación (cursos, libros, facultad…)</item>
+        <item name="8">Viaje (billete de avión)</item>
+        <item name="9">Ocio (conciertos, eventos, cine…)</item>
+        <item name="10">Casa (alquiler, hipoteca, seguro…)</item>
+        <item name="11">Facturas (luz, agua, teléfono, internet…)</item>
+        <item name="12">Obligaciones (préstamo, inversiones…)</item>
+        <item name="13">Trabajadores</item>
+        <item name="14">Otros</item>
+        <item name="15">General</item>
+    </array>
+
+</resources>

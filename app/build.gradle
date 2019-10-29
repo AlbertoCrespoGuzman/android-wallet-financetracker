@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        applicationId "ta.na.mao"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 9
+        versionName "0.0.9"
+
+    }
+    packagingOptions{
+        exclude 'META-INF/rxjava.properties'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.7'
+
+    implementation 'com.github.yukuku:ambilwarna:2.0.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.j256.ormlite:ormlite-android:5.0'
+    implementation 'org.apache.commons:commons-io:1.3.2'
+    //    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'org.apache:apache:18'
+    implementation 'com.google.guava:guava:25.0-android'
+    implementation('com.squareup.retrofit2:retrofit:2.3.0') {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+
+    implementation 'com.facebook.android:facebook-android-sdk:4.40.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:converter-protobuf:2.3.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.7'
+    // https://mvnrepository.com/artifact/androidx.constraintlayout/constraintlayout
+    implementation group: 'androidx.constraintlayout', name: 'constraintlayout', version: '1.1.3'
+    implementation 'com.github.devsideal:VectorChildFinder:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    // https://mvnrepository.com/artifact/androidx.drawerlayout/drawerlayout
+    implementation group: 'androidx.drawerlayout', name: 'drawerlayout', version: '1.0.0'
+    // https://mvnrepository.com/artifact/androidx.core/core
+    implementation group: 'androidx.core', name: 'core', version: '1.0.1'
+// https://mvnrepository.com/artifact/android.arch.navigation/navigation-ui
+    implementation group: 'android.arch.navigation', name: 'navigation-ui', version: '1.0.0-beta02'
+    implementation 'com.nshmura:recyclertablayout:1.5.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    implementation 'com.afollestad.material-dialogs:core:2.0.0-beta4'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation group: 'com.firebase', name: 'firebase-jobdispatcher', version: '0.8.5'
+// https://mvnrepository.com/artifact/androidx.databinding/databinding-compiler
+ //   annotationProcessor group: 'androidx.databinding', name: 'databinding-compiler', version: '3.5.0-alpha04'
+
+}

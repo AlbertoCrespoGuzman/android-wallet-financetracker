@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ta.na.mao"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.things.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-sdk/>
+
+    <application
+        android:icon="@drawable/icon"
+        android:hardwareAccelerated="false"
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ta.na.mao.activities.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="ta.na.mao.activities.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.UserDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.UserDetailsOldActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.FinancialControlMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.CalculatorMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.ServicePriceMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.ServicePriceFormActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.ProductPriceMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.ProductPriceFormActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ta.na.mao.activities.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="mydefaultapp" android:host="www.example.com" android:pathPrefix="/gizmos" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".utils.services.NetworkSchedulerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            android:name=".utils.services.GoalNotificationService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            android:name=".utils.services.NetworkSchedulerServiceOld"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            android:name=".utils.services.GoalNotificationServiceOld"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <receiver android:name=".utils.receivers.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

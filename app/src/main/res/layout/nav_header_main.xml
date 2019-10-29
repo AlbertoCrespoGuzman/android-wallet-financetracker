@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_marginTop="20dp"
+    android:padding="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/logo_big"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/title_font"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"/>
+    </RelativeLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:background="@drawable/white_circle"
+        android:layout_marginRight="15dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_avatar_primary_color"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/nav_header_main_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/title_font"/>
+        <TextView
+            android:id="@+id/nav_header_main_user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/font_book"/>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

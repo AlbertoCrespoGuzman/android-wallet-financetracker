@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_financialcontrol_incomeoutgo"
+            android:icon="@drawable/ic_hand"
+            android:title="" />
+        <item
+            android:id="@+id/nav_financialcontrol_statement"
+            android:icon="@drawable/ic_statement"
+            android:title="" />
+        <item
+            android:id="@+id/nav_financialcontrol_charts"
+            android:icon="@drawable/ic_pie_chart"
+            android:title="" />
+        <item
+            android:id="@+id/nav_financialcontrol_report"
+            android:icon="@drawable/ic_dollar_symbol"
+            android:title="" />
+        <item
+            android:id="@+id/nav_financialcontrol_goals"
+            android:icon="@drawable/ic_flag"
+            android:title="" />
+
+
+    </group>
+
+
+</menu>

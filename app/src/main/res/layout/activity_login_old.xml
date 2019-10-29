@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    style="@style/background"
+    android:orientation="vertical"
+    >
+    <ImageView
+        style="@style/imageLoginTitle"
+        app:srcCompat="@drawable/logo_big"/>
+    <TextView
+        android:id="@+id/loginTextview"
+        android:text="@string/login_title"
+        style="@style/loginTitle"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_login_input_email_text"
+        style="@style/inputLayout"
+        android:hint="@string/activity_login_email_text"
+        app:hintTextAppearance="@style/EditTextHintStyle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_login_input_email"
+            style="@style/inputText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/activity_login_input_password_text"
+        android:hint="@string/activity_login_password_text"
+        style="@style/inputLayout"
+        app:hintTextAppearance="@style/EditTextHintStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_login_input_password"
+            style="@style/inputText"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/activity_login_forgot_password"
+        style="@style/forgot_password_text"
+        android:text="@string/password_forgotten_text"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activity_login_login_button"
+        style="@style/loginButton"
+        android:text="@string/activity_login_button_login"
+        />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activity_login_register_button"
+        style="@style/button_register"
+        android:text="@string/activity_login_signup_button"/>
+
+
+</LinearLayout>

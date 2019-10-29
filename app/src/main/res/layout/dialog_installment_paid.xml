@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/background_dialog">
+
+
+        <TextView
+            android:id="@+id/dialog_installment_paid_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/installment_payment_title"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="@font/title_font"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/dialog_installment_paid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/installment_payment_message"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:id="@+id/dialog_installment_paid_buttons_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_installment_paid_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/button_register"
+            android:text="@string/no_installment_has_not_been_paid_yet"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_installment_paid_accept_button"
+            style="@style/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes_installment_has_been_paid"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,266 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/normal_font</item>
+        <item name="spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorBackgroundFloating">@color/colorPrimary</item>
+    </style>
+    <style name="spinner_black_text" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="colorPrimary">@android:color/black</item>
+    </style>
+    <style name="Theme.MaterialComponents.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="dialogfragment" parent="@style/Base.Theme.MaterialComponents.Dialog">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="android:textColorHighlight">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <!-- Define window properties as desired -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transaction_income_value_green</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.Light.DarkActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.MaterialComponents.Light" />
+
+    <style name="PrimaryButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">#d74c47</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+    <style name="background_no_padding">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="background">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">35dp</item>
+    </style>
+    <style name="background_dialog">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="loginTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_xxl</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/margin_n</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/title_font</item>
+    </style>
+    <style name="viewPageTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_n</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/margin_n</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/title_font</item>
+    </style>
+    <style name="imageLoginTitle">
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="EditTextHintStyle" parent="inputLayout">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="inputLayout" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/black</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/normal_font</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="inputLayoutOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/tool_bar_color</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/title_font</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="inputCustomLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:fontFamily">@font/normal_font</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="AppTheme.Cursor" parent="AppTheme">
+        <item name="colorAccent">@color/tool_bar_color</item>
+    </style>
+    <style name="inputText">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:textCursorDrawable">@drawable/primary_color_cursor</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:fontFamily">@font/normal_font</item>
+        <item name="colorAccent">@color/tool_bar_color</item>
+    </style>
+    <style name="loginButton" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button_login</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="forgot_password_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="facebook_button_custom" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/continue_with_facebook</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:drawableLeft">@drawable/ic_facebook_square_brands</item>
+        <item name="android:background">@color/facebook_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="button_register" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_register</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="button_dialog_accept" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:background">@color/tool_bar_color</item>
+        <item name="android:foreground">@drawable/ripple_white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/title_font</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="button_dialog_cancel" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:background">@drawable/borders_secondary_color</item>
+        <item name="android:foreground">@drawable/ripple_white</item>
+        <item name="android:textColor">@color/tool_bar_color</item>
+        <item name="android:fontFamily">@font/title_font</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="normal_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/normal_font</item>
+    </style>
+    <style name="radiobutton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/normal_font</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:buttonTint">@android:color/white</item>
+    </style>
+    <style name="text_background_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/colorTextHidden</item>
+    </style>
+    <style name="mySpinnerItemStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:maxLines">100</item>
+        <item name="android:lines">2</item>
+        <item name="android:scrollHorizontally">false</item>
+
+    </style>
+    <style name="mySpinnerStyle" parent="AppTheme">
+        <item name="android:textSize">50dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/spinner_wh_background</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:maxLines">100</item>
+        <item name="android:lines">2</item>
+        <item name="android:scrollHorizontally">false</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:maxLines">100</item>
+        <item name="android:lines">2</item>
+        <item name="android:scrollHorizontally">false</item>
+    </style>
+    <style name="RecyclerTabLayoutTheme">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RecyclerTabLayoutTheme.Basic"></style>
+
+
+    <style name="datePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+    <style name="button_calculator_main_activity">
+        <item name="android:fontFamily">@font/font_book</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/button_calculator_main_activity</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="button_calculator_main_activity_back">
+        <item name="android:fontFamily">@font/font_book</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/button_calculator_main_activity_back</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

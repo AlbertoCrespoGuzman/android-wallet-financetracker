@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="userdetails" type="ta.na.mao.database.models.UserDetails"/>
+        <variable name="handlerformold" type="ta.na.mao.activities.UserDetailsOldActivity.Handlerformold"/>
+    </data>
+
+    <LinearLayout
+        style="@style/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_user_details_title"
+                    style="@style/loginTitle"
+                    android:text="@string/register_user_details_title" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_user_details_name_text"
+                    style="@style/inputLayout"
+                    android:hint="@string/name"
+                    app:hintTextAppearance="@style/EditTextHintStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_user_details_name"
+                        style="@style/inputText"
+                        android:text="@={userdetails.name}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_user_details_cpf_text"
+                    style="@style/inputLayout"
+                    android:hint="@string/cpf"
+                    app:hintTextAppearance="@style/EditTextHintStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_user_details_cpf"
+                        style="@style/inputText"
+                        android:maxLength="11"
+                        android:inputType="number"
+                        android:text="@={userdetails.cpf}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/activity_user_details_socialname_text"
+                    style="@style/normal_text"
+                    android:text="@string/socialname" />
+
+                <RadioGroup
+                    android:id="@+id/activity_user_details_socialname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/socialname">
+
+                    <RadioButton
+                        style="@style/radiobutton"
+                        android:checked="@{!userdetails.socialname}"
+                        android:onClick="@{()->userdetails.setSocialname(false)}"
+                        android:text="@string/no" />
+
+                    <RadioButton
+                        style="@style/radiobutton"
+                        android:checked="@{userdetails.socialname}"
+                        android:onClick="@{()->userdetails.setSocialname(true)}"
+                        android:text="@string/yes" />
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_user_details_birthday_text"
+                    style="@style/inputLayout"
+                    android:hint="@string/birthday"
+                    app:hintTextAppearance="@style/EditTextHintStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_user_details_birthday"
+                        style="@style/inputText"
+                        android:focusable="false"
+                        android:onClick="@{handlerformold::showDatePicker}"
+                        android:text="@{userdetails.birthday}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_user_details_email_text"
+                    style="@style/inputLayout"
+                    android:hint="@string/email"
+                    app:hintTextAppearance="@style/EditTextHintStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_user_details_email"
+                        style="@style/inputText"
+                        android:text="@={userdetails.email}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/activity_user_details_mobile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="17">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/inputLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="2"
+                        app:hintTextAppearance="@style/EditTextHintStyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/activity_user_details_mobile_code_text"
+                            style="@style/inputText"
+                            android:layout_width="wrap_content"
+                            android:enabled="false"
+                            android:text="@{userdetails.mobile.code}" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/inputLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4"
+                        android:hint="@string/state_mobile"
+                        app:hintTextAppearance="@style/EditTextHintStyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/activity_user_details_mobile_state"
+                            style="@style/inputText"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:paddingBottom="2dp"
+                            android:text="@={userdetails.mobile.state}" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/inputLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="11"
+                        android:hint="@string/mobile_number"
+                        app:hintTextAppearance="@style/EditTextHintStyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/activity_user_details_mobile_number"
+                            style="@style/inputText"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:maxLength="9"
+                            android:paddingBottom="2dp"
+                            android:text="@={userdetails.mobile.number}"
+                            android:imeOptions="actionDone"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/activity_user_details_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/education_array"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/spinner_wh_background"
+                    android:selectedItemPosition="@={userdetails.education}" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/activity_user_details_skincolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/skincolor_array"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/spinner_wh_background"
+                    android:selectedItemPosition="@={userdetails.skincolor}" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/activity_user_details_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/genre_array"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/spinner_wh_background"
+                    android:selectedItemPosition="@={userdetails.genre}" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/activity_user_details_familyincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/familyincome_array"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/spinner_wh_background"
+                    android:selectedItemPosition="@={userdetails.familyincome}"
+                    android:layout_marginBottom="5dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/inputLayout"
+                    android:hint="@string/familynumber"
+                    app:hintTextAppearance="@style/EditTextHintStyle"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_user_details_familynumber"
+                        style="@style/inputText"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:text="@={userdetails.familynumber}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/activity_user_details_activated_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activated" />
+
+                <RadioGroup
+                    android:id="@+id/activity_user_details_activated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/activated">
+
+                    <RadioButton
+                        style="@style/radiobutton"
+                        android:checked="@{!userdetails.activated}"
+                        android:onClick="@{()->userdetails.setActivated(false)}"
+                        android:text="@string/actived_actived" />
+
+                    <RadioButton
+                        style="@style/radiobutton"
+                        android:checked="@{userdetails.activated}"
+                        android:onClick="@{()->userdetails.setActivated(true)}"
+                        android:text="@string/actived_notactived" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/activity_user_details_formalized_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formalized" />
+
+                <RadioGroup
+                    android:id="@+id/activity_user_details_formalized"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/formalized">
+
+                    <RadioButton
+                        style="@style/radiobutton"
+                        android:checked="@{!userdetails.formalized}"
+                        android:onClick="@{()->userdetails.setFormalized(false)}"
+                        android:text="@string/formalized_formalized" />
+
+                    <RadioButton
+                        style="@style/radiobutton"
+                        android:checked="@{userdetails.formalized}"
+                        android:onClick="@{()->userdetails.setFormalized(true)}"
+                        android:text="@string/formalized_notformalized" />
+                </RadioGroup>
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/activity_user_details_maincategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_wh_background"
+                    android:entries="@array/maincategory_array"
+                    android:onItemSelected="@{handlerformold::onItemSelected}"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:ellipsize="none"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:spinnerMode="dialog"
+                    android:scrollHorizontally="true"
+                    android:selectedItemPosition="@={userdetails.maincategory}" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/activity_user_details_subcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_wh_background"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:ellipsize="none"
+                    android:maxLines="100"
+                    android:spinnerMode="dialog"
+                    android:scrollHorizontally="false"
+                    android:selectedItemPosition="@={userdetails.subcategory}" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_user_details_subcategory_other_layout"
+                    style="@style/inputLayout"
+                    android:visibility="invisible"
+                    android:hint="@string/subcategory"
+                    app:hintTextAppearance="@style/EditTextHintStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_user_details_subcategory_other"
+                        style="@style/inputText"
+                        android:imeOptions="actionGo"
+                        android:text="@={userdetails.othersubcategory}" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/activity_user_details_button_submit"
+                    style="@style/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_submit" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/activity_user_details_button_back"
+                    style="@style/button_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/button_back"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

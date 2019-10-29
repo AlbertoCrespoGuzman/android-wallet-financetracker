@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapter_menu_popup_element_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/adapter_menu_popup_element_image"
+
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    app:srcCompat="@drawable/ic_pencil_primary_color"/>
+        </LinearLayout>
+    <TextView
+        android:id="@+id/adapter_menu_popup_element_text"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:text="test"
+        android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/adapter_menu_popup_element_close"
+
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                app:srcCompat="@drawable/ic_multiply"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

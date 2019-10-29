@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    style="@style/background"
+    android:orientation="vertical"
+    >
+        <ImageView
+            style="@style/imageLoginTitle"
+            app:srcCompat="@drawable/logo_big"/>
+        <TextView
+            android:id="@+id/loginTextview"
+            android:text="@string/login_title"
+            style="@style/loginTitle"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_login_input_email_text"
+            style="@style/inputLayout"
+            android:hint="@string/activity_login_email_text"
+            app:hintTextAppearance="@style/EditTextHintStyle"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_login_input_email"
+                android:drawableStart="@drawable/ic_avatar"
+                style="@style/inputText"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_login_input_password_text"
+            android:hint="@string/activity_login_password_text"
+            app:hintTextAppearance="@style/EditTextHintStyle"
+            style="@style/inputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_login_input_password"
+                style="@style/inputText"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:drawableStart="@drawable/ic_padlock"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/activity_login_forgot_password"
+            style="@style/forgot_password_text"
+            android:text="@string/password_forgotten_text"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_login_login_button"
+            style="@style/loginButton"
+            android:text="@string/activity_login_button_login"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_button"
+                    style="@style/facebook_button_custom"
+                    />
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_login_register_button"
+            style="@style/button_register"
+            android:text="@string/activity_login_signup_button"/>
+
+
+</LinearLayout>
